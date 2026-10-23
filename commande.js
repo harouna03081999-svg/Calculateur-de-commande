@@ -8,6 +8,8 @@ const montant_total_ttc = montant_total_produit + montant_TVA;
 const frais_livraison = 5000;
 const montant_final_ttc = montant_total_ttc + frais_livraison;
 const prix_moyen_produit = prix_unitaire + (prix_unitaire*18)/100;
+const remise = 10000;
+const total_avec_remise = montant_final_ttc - remise
 console.log("===== RECU DE COMMANDE =====");
 console.log("Client : " ,nom );
 console.log("Produit : " ,produit );
@@ -19,6 +21,9 @@ console.log("TVA (18%) : " ,montant_TVA, "FCFA" );
 console.log("Montant TTC : " ,montant_total_ttc, "FCFA" );
 console.log("Livraison : " ,frais_livraison, "FCFA" );
 console.log("TOTAL A PAYER : " ,montant_final_ttc, "FCFA" );
+console.log("TOTAL A PAYER APRES REMISE : ",total_avec_remise, "FCFA" );
+
+
 console.log();
 console.log("Prix moyen TTC par produit : " ,prix_moyen_produit, "FCFA" );
 console.log("type du nom : ", typeof nom);
