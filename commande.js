@@ -7,3 +7,4 @@ const montant_TVA = (montant_total_produit*18)/100;
 const montant_total_ttc = montant_total_produit + montant_TVA;
 const frais_livraison = 5000;
 const montant_final_ttc = montant_total_ttc + frais_livraison;
+const prix_moyen_produit = prix_unitaire + (prix_unitaire*18)/100;
