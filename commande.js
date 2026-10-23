@@ -4,3 +4,4 @@ const prix_unitaire = 250000;
 const quantite_produit = 2;
 const montant_total_produit = prix_unitaire*quantite_produit;
 const montant_TVA = (montant_total_produit*18)/100;
+const montant_total_ttc = montant_total_produit + montant_TVA
